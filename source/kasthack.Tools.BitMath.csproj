@@ -7,8 +7,8 @@
     <ProjectGuid>{7C252319-C355-429E-8A0E-5A9EF0900079}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>kasthack.Tools.BithackMath</RootNamespace>
-    <AssemblyName>kasthack.Tools.BithackMath</AssemblyName>
+    <RootNamespace>kasthack.Tools</RootNamespace>
+    <AssemblyName>kasthack.Tools.BitMath</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -37,12 +37,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Math.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BitMath.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

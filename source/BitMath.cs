@@ -1,8 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace kasthack.Tools.BithackMath
-{
-    public  static class Math {
+namespace kasthack.Tools {
+    public  static class BitMath {
         //sizes
         const int BIT_BYTE = 8;
         const int Isz = sizeof( int ) * BIT_BYTE - 1;

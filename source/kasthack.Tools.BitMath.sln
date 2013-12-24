@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kasthack.Tools.BithackMath", "kasthack.Tools.BithackMath.csproj", "{7C252319-C355-429E-8A0E-5A9EF0900079}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kasthack.Tools.BitMath", "kasthack.Tools.BitMath.csproj", "{7C252319-C355-429E-8A0E-5A9EF0900079}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
