@@ -2,7 +2,7 @@
  * 
  * BitMath is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
+ * the Free Software Foundation, either version 2 of the License, or
  * (at your option) any later version.
  *
  * BitMath is distributed in the hope that it will be useful,
@@ -13,8 +13,9 @@
  * You should have received a copy of the GNU General Public License
  * along with BitMath.  If not, see <http://www.gnu.org/licenses/>
 */
+
+// lurk http://graphics.stanford.edu/~seander/bithacks.html
 using System.Runtime.CompilerServices;
-// based on http://graphics.stanford.edu/~seander/bithacks.html
 namespace kasthack.Tools {
     public static class BitMath {
         //sizes
@@ -223,6 +224,51 @@ namespace kasthack.Tools {
         public static unsafe bool IsPowerOfTwo(byte value) {
             value = (byte)(value & ~(value & (value - 1)));
             return *(bool*)&value;
+        }
+        #endregion
+
+        #region Exponentiation by squaring
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static long Pow(long x, long y) {
+            var result = 1L;
+            while (y != 0) {
+                if ((y & 1L) == 1L) result *= x;
+                y >>= 1;
+                x *= x;
+            }
+            return result;
+        }
+        
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static ulong Pow(ulong x, ulong y) {
+            var result = 1UL;
+            while (y != 0) {
+                if ((y & 1UL) == 1UL) result *= x;
+                y >>= 1;
+                x *= x;
+            }
+            return result;
+        }
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static int Pow(int x, int y) {
+            var result = 1;
+            while (y != 0) {
+                if ((y & 1) == 1) result *= x;
+                y >>= 1;
+                x *= x;
+            }
+            return result;
+        }
+        
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static uint Pow(uint x, uint y) {
+            var result = 1U;
+            while (y != 0) {
+                if ((y & 1U) == 1U) result *= x;
+                y >>= 1;
+                x *= x;
+            }
+            return result;
         }
         #endregion
     }
