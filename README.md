@@ -1,3 +1,6 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/u7a5kb837v0vk30v)](https://ci.appveyor.com/project/kasthack/bitmath)
+
+
 BitMath
 ===========
 Fast math
