@@ -1,5 +1,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/u7a5kb837v0vk30v)](https://ci.appveyor.com/project/kasthack/bitmath)
 
+Merged into [kasthack.Performance](https://github.com/old-kasthack-s-projects/kasthack.Performance)
+=======================
 
 BitMath
 ===========
